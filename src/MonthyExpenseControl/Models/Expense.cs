@@ -1,4 +1,6 @@
-﻿namespace MonthyExpenseControl.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MonthyExpenseControl.Models
 {
     /// <summary>
     /// Represents a expense.
@@ -6,10 +8,16 @@
     public class Expense
     {
         /// <summary>
+        /// Expense sequential Id
+        /// </summary>
+        public int ExpenseId { get; set; }
+
+        /// <summary>
         /// Number that represent the month
         /// when the expense happened
         /// </summary>
-        public int MonthId { get; set; }
+        [Required]
+        public int MonthsId { get; set; }
 
         /// <summary>
         /// Complete month description
@@ -19,6 +27,8 @@
         /// <summary>
         /// Expense description.
         /// </summary>
+        [Required]
+        [MaxLength(40, ErrorMessage = "A descrição deve ter no máximo 40 caracteres")]
         public string Description { get; set; }
 
         /// <summary>

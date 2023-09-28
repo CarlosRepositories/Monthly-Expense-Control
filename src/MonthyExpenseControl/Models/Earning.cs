@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MonthyExpenseControl.Models
 {
@@ -8,10 +9,16 @@ namespace MonthyExpenseControl.Models
     public class Earning
     {
         /// <summary>
+        /// Earning sequential Id
+        /// </summary>
+        public int EarningId { get; set; }
+
+        /// <summary>
         /// Number that represent the month
         /// when the earning happened
         /// </summary>
-        public int MonthId { get; set; }
+        [Required]
+        public int MonthsId { get; set; }
 
         /// <summary>
         /// Complete month description
@@ -19,13 +26,21 @@ namespace MonthyExpenseControl.Models
         public virtual Months MonthDescription { get; set; }
 
         /// <summary>
+        /// Earning description.
+        /// </summary>        
+        [Required]
+        [MaxLength(40, ErrorMessage = "A descrição deve ter no máximo 40 caracteres")]
+        public string Description { get; set; }
+
+        /// <summary>
         /// Projected Earning value.
-        /// </summary>
+        /// </summary>        
+        
         public double ProjectedEarning { get; set; } = 0.00;
 
         /// <summary>
         /// Incurred Earning value.
-        /// </summary>
+        /// </summary>        
         public double IncurredEarning { get; set; } = 0.00;
     }
 }

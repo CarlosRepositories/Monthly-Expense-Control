@@ -1,4 +1,6 @@
-﻿namespace MonthyExpenseControl.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MonthyExpenseControl.Models
 {
     /// <summary>
     /// Represents monthly Withdraw of the investments
@@ -6,8 +8,14 @@
     public class WithdrawalOfInvestments
     {
         /// <summary>
+        /// Sequential Id
+        /// </summary>
+        public int WithdrawalOfInvestmentsId { get; set; }
+
+        /// <summary>
         /// Number that represent the month        
         /// </summary>
+        [Required]
         public int MonthId { get; set; }
 
         /// <summary>

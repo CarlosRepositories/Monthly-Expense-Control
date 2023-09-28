@@ -1,4 +1,6 @@
-﻿namespace MonthyExpenseControl.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MonthyExpenseControl.Models
 {
     /// <summary>
     /// Represents monthly investment capacity
@@ -6,9 +8,15 @@
     public class InvestmentCapacity
     {
         /// <summary>
+        /// Investiment sequential Id
+        /// </summary>
+        public int InvestmentCapacityId { get; set; }
+
+        /// <summary>
         /// Number that represent the month        
         /// </summary>
-        public int MonthId { get; set; }
+        [Required]
+        public int MonthsId { get; set; }
 
         /// <summary>
         /// Complete month description

@@ -1,4 +1,6 @@
-﻿namespace MonthyExpenseControl.Models
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace MonthyExpenseControl.Models
 {
     /// <summary>
     /// Monthly sumary of Total earnings and Expenses.
@@ -6,8 +8,14 @@
     public class Sumary
     {
         /// <summary>
+        /// Sumary sequential Id
+        /// </summary>
+        public int SumaryId { get; set; }
+
+        /// <summary>
         /// Number that represent the month        
         /// </summary>
+        [Required]
         public int MonthId { get; set; }
 
         /// <summary>
@@ -18,16 +26,16 @@
         /// <summary>
         /// Total earnings.
         /// </summary>
-        public Earning Earnings { get; set; }
+        public double Earnings { get; set; } = 0.00;
 
         /// <summary>
         /// Total Earning.
         /// </summary>
-        public Expense Expenses { get; set; }
+        public double Expenses { get; set; } = 0.00;
 
         /// <summary>
         /// Total Investment Capacity.
         /// </summary>
-        public InvestmentCapacity InvestmentCapacity { get; set; }
+        public double InvestmentCapacity { get; set; } = 0.00;
     }
 }
