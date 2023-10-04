@@ -29,8 +29,8 @@ namespace MonthyExpenseControl.Models
         public double ProjectedInvestmentCapacity { get; set; } = 0.00;
 
         /// <summary>
-        /// Incurred investment capacity 
+        /// Realized investment capacity 
         /// </summary>
-        public double IncurredInvestmentCapacity { get; set; } = 0.00;
+        public double ReliazedInvestmentCapacity { get; set; } = 0.00;
     }
 }

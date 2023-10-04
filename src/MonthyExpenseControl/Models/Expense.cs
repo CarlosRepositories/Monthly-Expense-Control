@@ -37,8 +37,8 @@ namespace MonthyExpenseControl.Models
         public double ProjectedExpense { get; set; } = 0.00;
 
         /// <summary>
-        /// Incurred Expense value.
+        /// Realized Expense value.
         /// </summary>
-        public double IncurredExpense { get; set; } = 0.00;
+        public double RealizedExpense { get; set; } = 0.00;
     }
 }

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MonthyExpenseControl.Context;
 
@@ -11,9 +12,11 @@ using MonthyExpenseControl.Context;
 namespace MonthyExpenseControl.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230929154957_adjustingModelsAndCreatingWithDrawalSumariesModel")]
+    partial class adjustingModelsAndCreatingWithDrawalSumariesModel
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -189,35 +192,26 @@ namespace MonthyExpenseControl.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SummaryId"));
 
+                    b.Property<double>("Earnings")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Expenses")
+                        .HasColumnType("float");
+
+                    b.Property<double>("InvestmentCapacity")
+                        .HasColumnType("float");
+
                     b.Property<int?>("MonthDescriptionMonthsId")
                         .HasColumnType("int");
 
                     b.Property<int>("MonthId")
                         .HasColumnType("int");
 
-                    b.Property<double>("TotalProjectedEarnings")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalProjectedExpenses")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalProjectedInvestmentCapacity")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalRealizedEarnings")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalRealizedExpenses")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalRealizedInvestmentCapacity")
-                        .HasColumnType("float");
-
                     b.HasKey("SummaryId");
 
                     b.HasIndex("MonthDescriptionMonthsId");
 
-                    b.ToTable("Summaries");
+                    b.ToTable("Sumaries");
                 });
 
             modelBuilder.Entity("MonthyExpenseControl.Models.WithdrawalOfInvestments", b =>

@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using MonthyExpenseControl.Context;
 
@@ -11,9 +12,11 @@ using MonthyExpenseControl.Context;
 namespace MonthyExpenseControl.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20230928225825_PopulatingMonthsDescriptionTable")]
+    partial class PopulatingMonthsDescriptionTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -35,7 +38,10 @@ namespace MonthyExpenseControl.Migrations
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
-                    b.Property<int?>("MonthSummaryId")
+                    b.Property<double>("IncurredEarning")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("MonthSumaryId")
                         .HasColumnType("int");
 
                     b.Property<int>("MonthsId")
@@ -44,12 +50,9 @@ namespace MonthyExpenseControl.Migrations
                     b.Property<double>("ProjectedEarning")
                         .HasColumnType("float");
 
-                    b.Property<double>("RealizedEarning")
-                        .HasColumnType("float");
-
                     b.HasKey("EarningId");
 
-                    b.HasIndex("MonthSummaryId");
+                    b.HasIndex("MonthSumaryId");
 
                     b.HasIndex("MonthsId");
 
@@ -69,7 +72,10 @@ namespace MonthyExpenseControl.Migrations
                         .HasMaxLength(40)
                         .HasColumnType("nvarchar(40)");
 
-                    b.Property<int?>("MonthSummaryId")
+                    b.Property<double>("IncurredExpense")
+                        .HasColumnType("float");
+
+                    b.Property<int?>("MonthSumaryId")
                         .HasColumnType("int");
 
                     b.Property<int>("MonthsId")
@@ -78,12 +84,9 @@ namespace MonthyExpenseControl.Migrations
                     b.Property<double>("ProjectedExpense")
                         .HasColumnType("float");
 
-                    b.Property<double>("RealizedExpense")
-                        .HasColumnType("float");
-
                     b.HasKey("ExpenseId");
 
-                    b.HasIndex("MonthSummaryId");
+                    b.HasIndex("MonthSumaryId");
 
                     b.HasIndex("MonthsId");
 
@@ -98,13 +101,13 @@ namespace MonthyExpenseControl.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("InvestmentCapacityId"));
 
+                    b.Property<double>("IncurredInvestmentCapacity")
+                        .HasColumnType("float");
+
                     b.Property<int>("MonthsId")
                         .HasColumnType("int");
 
                     b.Property<double>("ProjectedInvestmentCapacity")
-                        .HasColumnType("float");
-
-                    b.Property<double>("ReliazedInvestmentCapacity")
                         .HasColumnType("float");
 
                     b.HasKey("InvestmentCapacityId");
@@ -141,25 +144,25 @@ namespace MonthyExpenseControl.Migrations
                     b.ToTable("MonthInvestments");
                 });
 
-            modelBuilder.Entity("MonthyExpenseControl.Models.MonthSummary", b =>
+            modelBuilder.Entity("MonthyExpenseControl.Models.MonthSumary", b =>
                 {
-                    b.Property<int>("MonthSummaryId")
+                    b.Property<int>("MonthSumaryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MonthSummaryId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MonthSumaryId"));
 
                     b.Property<int>("MonthsId")
                         .HasColumnType("int");
 
-                    b.Property<int?>("SumaryOfTheMonthSummaryId")
+                    b.Property<int?>("SumaryOfTheMonthSumaryId")
                         .HasColumnType("int");
 
-                    b.HasKey("MonthSummaryId");
+                    b.HasKey("MonthSumaryId");
 
                     b.HasIndex("MonthsId");
 
-                    b.HasIndex("SumaryOfTheMonthSummaryId");
+                    b.HasIndex("SumaryOfTheMonthSumaryId");
 
                     b.ToTable("Months");
                 });
@@ -181,13 +184,22 @@ namespace MonthyExpenseControl.Migrations
                     b.ToTable("MonthsDescription");
                 });
 
-            modelBuilder.Entity("MonthyExpenseControl.Models.Summary", b =>
+            modelBuilder.Entity("MonthyExpenseControl.Models.Sumary", b =>
                 {
-                    b.Property<int>("SummaryId")
+                    b.Property<int>("SumaryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SummaryId"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SumaryId"));
+
+                    b.Property<double>("Earnings")
+                        .HasColumnType("float");
+
+                    b.Property<double>("Expenses")
+                        .HasColumnType("float");
+
+                    b.Property<double>("InvestmentCapacity")
+                        .HasColumnType("float");
 
                     b.Property<int?>("MonthDescriptionMonthsId")
                         .HasColumnType("int");
@@ -195,29 +207,11 @@ namespace MonthyExpenseControl.Migrations
                     b.Property<int>("MonthId")
                         .HasColumnType("int");
 
-                    b.Property<double>("TotalProjectedEarnings")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalProjectedExpenses")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalProjectedInvestmentCapacity")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalRealizedEarnings")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalRealizedExpenses")
-                        .HasColumnType("float");
-
-                    b.Property<double>("TotalRealizedInvestmentCapacity")
-                        .HasColumnType("float");
-
-                    b.HasKey("SummaryId");
+                    b.HasKey("SumaryId");
 
                     b.HasIndex("MonthDescriptionMonthsId");
 
-                    b.ToTable("Summaries");
+                    b.ToTable("Sumaries");
                 });
 
             modelBuilder.Entity("MonthyExpenseControl.Models.WithdrawalOfInvestments", b =>
@@ -244,32 +238,11 @@ namespace MonthyExpenseControl.Migrations
                     b.ToTable("WithdrawalOfInvestments");
                 });
 
-            modelBuilder.Entity("MonthyExpenseControl.Models.WithdrawalSummary", b =>
-                {
-                    b.Property<int>("WithdrawalSummaryId")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("WithdrawalSummaryId"));
-
-                    b.Property<double>("MonthlyWithdrawalTotal")
-                        .HasColumnType("float");
-
-                    b.Property<int>("MonthsId")
-                        .HasColumnType("int");
-
-                    b.HasKey("WithdrawalSummaryId");
-
-                    b.HasIndex("MonthsId");
-
-                    b.ToTable("WithdrawalSumaries");
-                });
-
             modelBuilder.Entity("MonthyExpenseControl.Models.Earning", b =>
                 {
-                    b.HasOne("MonthyExpenseControl.Models.MonthSummary", null)
+                    b.HasOne("MonthyExpenseControl.Models.MonthSumary", null)
                         .WithMany("MonthlyEarnings")
-                        .HasForeignKey("MonthSummaryId");
+                        .HasForeignKey("MonthSumaryId");
 
                     b.HasOne("MonthyExpenseControl.Models.Months", "MonthDescription")
                         .WithMany()
@@ -282,9 +255,9 @@ namespace MonthyExpenseControl.Migrations
 
             modelBuilder.Entity("MonthyExpenseControl.Models.Expense", b =>
                 {
-                    b.HasOne("MonthyExpenseControl.Models.MonthSummary", null)
+                    b.HasOne("MonthyExpenseControl.Models.MonthSumary", null)
                         .WithMany("MonthlyExpenses")
-                        .HasForeignKey("MonthSummaryId");
+                        .HasForeignKey("MonthSumaryId");
 
                     b.HasOne("MonthyExpenseControl.Models.Months", "MonthDescription")
                         .WithMany()
@@ -317,7 +290,7 @@ namespace MonthyExpenseControl.Migrations
                     b.Navigation("Month");
                 });
 
-            modelBuilder.Entity("MonthyExpenseControl.Models.MonthSummary", b =>
+            modelBuilder.Entity("MonthyExpenseControl.Models.MonthSumary", b =>
                 {
                     b.HasOne("MonthyExpenseControl.Models.Months", "MonthDescription")
                         .WithMany()
@@ -325,16 +298,16 @@ namespace MonthyExpenseControl.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("MonthyExpenseControl.Models.Summary", "SumaryOfTheMonth")
+                    b.HasOne("MonthyExpenseControl.Models.Sumary", "SumaryOfTheMonth")
                         .WithMany()
-                        .HasForeignKey("SumaryOfTheMonthSummaryId");
+                        .HasForeignKey("SumaryOfTheMonthSumaryId");
 
                     b.Navigation("MonthDescription");
 
                     b.Navigation("SumaryOfTheMonth");
                 });
 
-            modelBuilder.Entity("MonthyExpenseControl.Models.Summary", b =>
+            modelBuilder.Entity("MonthyExpenseControl.Models.Sumary", b =>
                 {
                     b.HasOne("MonthyExpenseControl.Models.Months", "MonthDescription")
                         .WithMany()
@@ -354,18 +327,7 @@ namespace MonthyExpenseControl.Migrations
                     b.Navigation("Month");
                 });
 
-            modelBuilder.Entity("MonthyExpenseControl.Models.WithdrawalSummary", b =>
-                {
-                    b.HasOne("MonthyExpenseControl.Models.Months", "MonthDescription")
-                        .WithMany()
-                        .HasForeignKey("MonthsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("MonthDescription");
-                });
-
-            modelBuilder.Entity("MonthyExpenseControl.Models.MonthSummary", b =>
+            modelBuilder.Entity("MonthyExpenseControl.Models.MonthSumary", b =>
                 {
                     b.Navigation("MonthlyEarnings");
 

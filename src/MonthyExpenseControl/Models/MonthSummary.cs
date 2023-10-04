@@ -7,12 +7,12 @@ namespace MonthyExpenseControl.Models
     /// related to expenses and earnings, considering projected
     /// and realized.
     /// </summary>
-    public class MonthSumary
+    public class MonthSummary
     {
         /// <summary>
         /// Month Sumary sequential Id
         /// </summary>
-        public int MonthSumaryId { get; set; }
+        public int MonthSummaryId { get; set; }
 
         /// <summary>
         /// Number that represent a month
@@ -38,6 +38,6 @@ namespace MonthyExpenseControl.Models
         /// <summary>
         /// Sumary of the month.
         /// </summary>
-        public Sumary SumaryOfTheMonth { get; set; }
+        public Summary SumaryOfTheMonth { get; set; }
     }
 }
