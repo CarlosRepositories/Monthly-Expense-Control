@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aC2Bd3UpLg/uSAzI/tJ1msVgUCzNDeSxaWIjjv4bRwg=",
+  "Source": "MonthyExpenseControl.WebApi",
+  "BasePath": "_content/MonthyExpenseControl.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
