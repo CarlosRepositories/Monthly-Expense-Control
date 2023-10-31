@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "AnAyDHLXFkQLlu915jr6G7qub5ButV6M65FwoszQQDWSpLYeqns/66n+AwNnh0p9ICqE5lp7btlovxgQOsPLpA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\carrl\\OneDrive\\Área de Trabalho\\estudos\\ControleDeGastosMensais\\Controle-de-Gastos-Mensais-MVC\\src\\MonthyExpenseControl.WebApi\\MonthyExpenseControl.WebApi.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\carrl\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
