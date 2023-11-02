@@ -23,19 +23,19 @@ public sealed class Months
     /// <summary>
     /// Class constructor
     /// </summary>
-    /// <param name="monthId"></param>
+    /// <param name="monthsId"></param>
     /// <param name="monthName"></param>
-    public Months(int monthId, string monthName)
+    public Months(int monthsId, string monthName)
     {
-        ValidateDomain(monthId, monthName);
+        ValidateDomain(monthsId, monthName);
     }
 
-    private void ValidateDomain(int monthId, string monthName)
+    private void ValidateDomain(int monthsId, string monthName)
     {
-        DomainExceptionValidation.when(monthId < 0, "Value cannot be less than zero.");
+        DomainExceptionValidation.when(monthsId < 0, "Value cannot be less than zero.");
         DomainExceptionValidation.when(string.IsNullOrEmpty(monthName), "Value cannot be .");
 
-        MonthsId = monthId;
+        MonthsId = monthsId;
         MonthName = monthName;
     }
 }

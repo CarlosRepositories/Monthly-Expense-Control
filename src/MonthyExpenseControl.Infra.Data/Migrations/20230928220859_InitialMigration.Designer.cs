@@ -1,12 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
+using MonthyExpenseControl.Infra.Data.Context;
 
 #nullable disable
 
 namespace MonthyExpenseControl.Infra.Data.Migrations;
 
-[DbContext(typeof(AppDbContext))]
+[DbContext(typeof(ApplicationDbContext))]
 [Migration("20230928220859_InitialMigration")]
 partial class InitialMigration
 {

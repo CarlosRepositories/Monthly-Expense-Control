@@ -2,13 +2,13 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
-using MonthyExpenseControl.Infra.Data.Migrations;
+using MonthyExpenseControl.Infra.Data.Context;
 
 #nullable disable
 
 namespace MonthyExpenseControl.Migrations
 {
-    [DbContext(typeof(AppDbContext))]
+    [DbContext(typeof(ApplicationDbContext))]
     [Migration("20230929222703_PopulatingWithdrawalSumariesTable")]
     partial class PopulatingWithdrawalSumariesTable
     {
