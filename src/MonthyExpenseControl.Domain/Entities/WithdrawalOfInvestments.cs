@@ -16,6 +16,7 @@ public sealed class WithdrawalOfInvestments
     /// <summary>
     /// Withdraw description.
     /// </summary>
+    [MaxLength(40, ErrorMessage = "A descrição deve ter no máximo 40 caracteres")]
     public string Description { get; private set; }
 
     /// <summary>
@@ -27,34 +28,34 @@ public sealed class WithdrawalOfInvestments
     /// class contructor
     /// </summary>
     /// <param name="description"></param>
-    /// <param name="withdrawalvalue"></param>
-    public WithdrawalOfInvestments(string description, double withdrawalvalue)
+    /// <param name="withDrawalValue"></param>
+    public WithdrawalOfInvestments(string description, double withDrawalValue)
     {
-        ValidationDomain(description, withdrawalvalue);
+        ValidationDomain(description, withDrawalValue);
     }
 
     /// <summary>
     /// class contructor
     /// </summary>
     /// <param name="description"></param>
-    /// <param name="withdrawalvalue"></param>
-    public WithdrawalOfInvestments(int withdrawalOfInvestmentsId, string description, double withdrawalvalue)
+    /// <param name="withDrawalValue"></param>
+    public WithdrawalOfInvestments(int withdrawalOfInvestmentsId, string description, double withDrawalValue)
     {
         DomainExceptionValidation.when(withdrawalOfInvestmentsId < 0, "Value cannot be less than zero.");
         WithdrawalOfInvestmentsId = withdrawalOfInvestmentsId;
-        ValidationDomain(description, withdrawalvalue);
+        ValidationDomain(description, withDrawalValue);
     }
-    private void ValidationDomain(string description, double withdrawalvalue)
+    private void ValidationDomain(string description, double withDrawalValue)
     {
         DomainExceptionValidation.when(string.IsNullOrEmpty(description), "Value cannot be null.");
-        DomainExceptionValidation.when(withdrawalvalue < 0, "Value cannot be less than zero.");
+        DomainExceptionValidation.when(withDrawalValue < 0, "Value cannot be less than zero.");
         Description = description;
-        WithDrawalValue = withdrawalvalue;
+        WithDrawalValue = withDrawalValue;
     }
 
-    private void Update(string description, double withdrawalvalue)
+    private void Update(string description, double withDrawalValue)
     {
-        ValidationDomain(description, withdrawalvalue);
+        ValidationDomain(description, withDrawalValue);
     }
 
     /// <summary>

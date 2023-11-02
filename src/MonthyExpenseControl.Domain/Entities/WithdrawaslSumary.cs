@@ -15,6 +15,11 @@ public sealed class WithdrawalSummary
     public int WithdrawalSummaryId { get; private set; }
 
     /// <summary>
+    /// Contains the monthly withdrawal total value
+    /// </summary>
+    public double MonthlyWithdrawalTotal { get; private set; }
+
+    /// <summary>
     /// Class constructor
     /// </summary>
     /// <param name="monthlyWithDrawalTotal"></param>
@@ -34,11 +39,6 @@ public sealed class WithdrawalSummary
         WithdrawalSummaryId = withdrawalSummaryId;
         MonthlyWithdrawalTotal = monthlyWithDrawalTotal;
     }
-
-    /// <summary>
-    /// Contains the monthly withdrawal total value
-    /// </summary>
-    public double MonthlyWithdrawalTotal { get; private set; }
 
     /// <summary>
     /// Number that represent the month

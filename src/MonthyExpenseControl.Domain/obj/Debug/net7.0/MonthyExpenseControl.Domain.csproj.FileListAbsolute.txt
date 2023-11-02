@@ -1,4 +1,5 @@
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\bin\Debug\net7.0\MonthyExpenseControl.Domain.deps.json
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\bin\Debug\net7.0\MonthyExpenseControl.Domain.runtimeconfig.json
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\bin\Debug\net7.0\MonthyExpenseControl.Domain.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\bin\Debug\net7.0\MonthyExpenseControl.Domain.pdb
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\obj\Debug\net7.0\MonthyExpenseControl.Domain.GeneratedMSBuildEditorConfig.editorconfig
@@ -8,4 +9,5 @@ C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Contro
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\obj\Debug\net7.0\MonthyExpenseControl.Domain.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\obj\Debug\net7.0\refint\MonthyExpenseControl.Domain.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\obj\Debug\net7.0\MonthyExpenseControl.Domain.pdb
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\obj\Debug\net7.0\MonthyExpenseControl.Domain.genruntimeconfig.cache
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Domain\obj\Debug\net7.0\ref\MonthyExpenseControl.Domain.dll

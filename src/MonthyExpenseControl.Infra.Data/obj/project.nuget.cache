@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4k1W7ChGkoiwcidAi7Ipl2t7luD+8ZHGLmjfPi+aFJqy+Dse3fJ3WfHhrm4dLGCAjX/tvO6KvCW68JN8iZoBcA==",
+  "dgSpecHash": "lxvijq7Sg83DTSgsXGlhN4rmTS2ZwR2pO2qjHX3sYLgO9FeUSQuxXhQVtTYgHauWgmUw+0wTVN2MBj3Yfg7HkQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\carrl\\OneDrive\\Área de Trabalho\\estudos\\ControleDeGastosMensais\\Controle-de-Gastos-Mensais-MVC\\src\\MonthyExpenseControl.Infra.Data\\MonthyExpenseControl.Infra.Data.csproj",
   "expectedPackageFiles": [
