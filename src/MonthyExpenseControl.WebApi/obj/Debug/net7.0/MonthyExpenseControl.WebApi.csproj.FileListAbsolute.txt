@@ -80,3 +80,7 @@ C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Contro
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\System.CodeDom.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.pdb
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\MonthyExpenseControl.Application.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\MonthyExpenseControl.Application.pdb

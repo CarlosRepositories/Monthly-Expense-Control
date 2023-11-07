@@ -9,3 +9,7 @@ C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Contro
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\obj\Debug\net7.0\refint\MonthyExpenseControl.Application.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\obj\Debug\net7.0\MonthyExpenseControl.Application.pdb
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\obj\Debug\net7.0\ref\MonthyExpenseControl.Application.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\bin\Debug\net7.0\MonthyExpenseControl.Domain.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\bin\Debug\net7.0\MonthyExpenseControl.Domain.pdb
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\obj\Debug\net7.0\MonthyExpenseControl.Application.csproj.AssemblyReference.cache
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Application\obj\Debug\net7.0\MonthyExpenseControl.Application.csproj.CopyComplete

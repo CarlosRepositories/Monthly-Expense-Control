@@ -8,6 +8,6 @@ namespace MonthyExpenseControl.Domain.Interfaces
         Task<IEnumerable<Earning>> GetEarningsAsync();
         Task<Earning> CreateEarningAsync(Earning earning);        
         Task<Earning> UpdateEarningAsync(Earning earning);
-        Task<Earning> RemoveEarningsAsync(Earning earning);
+        Task<Earning> RemoveEarningAsync(Earning earning);
     }
 }
