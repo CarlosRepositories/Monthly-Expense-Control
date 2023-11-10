@@ -16,17 +16,17 @@ public class MonthSummaryDTO
     /// <summary>
     /// Contains all earnings for a month.
     /// </summary>
-    public List<Earning> MonthlyEarnings { get; set; }
+    public IEnumerable<EarningDTO> MonthlyEarnings { get; set; }
 
     /// <summary>
     /// Contains all expenses for a month.
     /// </summary>
-    public List<Expense> MonthlyExpenses { get; set; }
+    public IEnumerable<ExpenseDTO> MonthlyExpenses { get; set; }
 
     /// <summary>
     /// Sumary of the month.
     /// </summary>
-    public Summary SumaryOfTheMonth { get; set; }
+    public SummaryDTO SumaryOfTheMonth { get; set; }
 
     /// <summary>
     /// Number that represent a month
@@ -37,5 +37,5 @@ public class MonthSummaryDTO
     /// <summary>
     /// Complete Month Description.
     /// </summary>
-    public Months MonthDescription { get; set; }
+    public MonthDTO MonthDescription { get; set; }
 }

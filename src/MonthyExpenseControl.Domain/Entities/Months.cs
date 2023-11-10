@@ -33,7 +33,7 @@ public sealed class Months
     private void ValidateDomain(int monthsId, string monthName)
     {
         DomainExceptionValidation.when(monthsId < 0, "Value cannot be less than zero.");
-        DomainExceptionValidation.when(string.IsNullOrEmpty(monthName), "Value cannot be .");
+        DomainExceptionValidation.when(string.IsNullOrEmpty(monthName), "Value cannot be null or empty.");
 
         MonthsId = monthsId;
         MonthName = monthName;

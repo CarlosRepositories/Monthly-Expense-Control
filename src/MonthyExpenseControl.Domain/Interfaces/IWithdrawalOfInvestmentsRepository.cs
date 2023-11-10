@@ -4,10 +4,11 @@ namespace MonthyExpenseControl.Domain.Interfaces
 {
     public interface IWithdrawalOfInvestmentsRepository
     {
-        Task<WithdrawalOfInvestments> GetEarningByIdAsync(int id);
-        Task<IEnumerable<WithdrawalOfInvestments>> GetEarningsAsync();
-        Task<WithdrawalOfInvestments> CreateEarningAsync(WithdrawalOfInvestments withdrawal);
-        Task<WithdrawalOfInvestments> UpdateEarningAsync(WithdrawalOfInvestments withdrawal);
+        Task<WithdrawalOfInvestments> GetWithDrawalByIdAsync(int id);
+        Task<IEnumerable<WithdrawalOfInvestments>> GetWithDrawalsAsync();
+        Task<WithdrawalOfInvestments> CreateWithDrawalAsync(WithdrawalOfInvestments withdrawal);
+        Task<WithdrawalOfInvestments> UpdateWithDrawalAsync(WithdrawalOfInvestments withdrawal);
+        Task<WithdrawalOfInvestments> RemoveWithDrawalAsync(WithdrawalOfInvestments withdrawal);
 
     }
 }

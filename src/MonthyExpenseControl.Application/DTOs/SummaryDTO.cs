@@ -6,7 +6,7 @@ namespace MonthyExpenseControl.Application.DTOs;
 /// <summary>
 /// Used to transferer Sumary Objects
 /// </summary>
-public class SumaryDTO
+public class SummaryDTO
 {
     /// <summary>
     /// Sumary sequential Id
