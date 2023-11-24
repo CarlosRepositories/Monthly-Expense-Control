@@ -1,8 +1,11 @@
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.deps.json
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.runtimeconfig.json
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.pdb
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Application.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Domain.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.Data.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Application.pdb
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.Data.pdb
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Domain.pdb
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\MonthyExpenseControl.Infra.IOC.csproj.AssemblyReference.cache
@@ -14,8 +17,5 @@ C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Contro
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\MonthyExpenseControl.Infra.IOC.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\refint\MonthyExpenseControl.Infra.IOC.dll
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\MonthyExpenseControl.Infra.IOC.pdb
-C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\ref\MonthyExpenseControl.Infra.IOC.dll
-C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Infra.IOC.runtimeconfig.json
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\MonthyExpenseControl.Infra.IOC.genruntimeconfig.cache
-C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Application.dll
-C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\bin\Debug\net7.0\MonthyExpenseControl.Application.pdb
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.Infra.IOC\obj\Debug\net7.0\ref\MonthyExpenseControl.Infra.IOC.dll

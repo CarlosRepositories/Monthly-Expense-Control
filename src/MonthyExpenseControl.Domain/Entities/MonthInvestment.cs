@@ -19,11 +19,6 @@ public sealed class MonthInvestment
     public double InvestmentAmount { get; private set; } = 0.00;
 
     /// <summary>
-    /// Type of investment.
-    /// </summary>
-    public string TypeOfInvestment { get; private set; }
-
-    /// <summary>
     /// The percentage invested related to the salary amount for example 0.10.
     /// </summary>
     public double InvestmentPercentage { get; private set; } = 0.00;
@@ -31,41 +26,37 @@ public sealed class MonthInvestment
     /// <summary>
     /// Class constructor
     /// </summary>
-    /// <param name="investmentAmount"></param>
-    /// <param name="typeOfInvestment"></param>
+    /// <param name="investmentAmount"></param>    
     /// <param name="investmentPercentage"></param>
     /// <param name="monthsId"></param>
-    public MonthInvestment(int monthInvestmentId, double investmentAmount, string typeOfInvestment, 
+    public MonthInvestment(int monthInvestmentId, double investmentAmount, 
                            double investmentPercentage, int monthsId)
     {
         DomainExceptionValidation.when(monthInvestmentId < 0, "Value cannot be less than zero.");
         MonthInvestmentId = monthInvestmentId;
-        validateDomain(investmentAmount, typeOfInvestment, investmentPercentage, monthsId);
+        validateDomain(investmentAmount, investmentPercentage, monthsId);
     }
 
     /// <summary>
     /// Class constructor
     /// </summary>
-    /// <param name="investmentAmount"></param>
-    /// <param name="typeOfInvestment"></param>
+    /// <param name="investmentAmount"></param>    
     /// <param name="investmentPercentage"></param>
     /// <param name="monthsId"></param>
-    public MonthInvestment(double investmentAmount, string typeOfInvestment,
+    public MonthInvestment(double investmentAmount,
                            double investmentPercentage, int monthsId)
     {
-        validateDomain(investmentAmount, typeOfInvestment, investmentPercentage, monthsId);
+        validateDomain(investmentAmount, investmentPercentage, monthsId);
     }
 
-    private void validateDomain(double investmentAmount, string typeOfInvestment, 
+    private void validateDomain(double investmentAmount,
                                 double investmentPercentage, int monthsId)
     {
-        DomainExceptionValidation.when(investmentAmount < 0, "Value can't be less then zero.");
-        DomainExceptionValidation.when(string.IsNullOrEmpty(typeOfInvestment), "Value cannot be null or empty.");
+        DomainExceptionValidation.when(investmentAmount < 0, "Value can't be less then zero.");        
         DomainExceptionValidation.when(investmentPercentage < 0, "Value cannot be null or empty.");
         DomainExceptionValidation.when(monthsId < 0, "Value can't be less then zero.");
 
         InvestmentAmount = investmentAmount;
-        TypeOfInvestment = typeOfInvestment;
         InvestmentPercentage = investmentPercentage;
         MonthsId = monthsId;
     }
@@ -81,9 +72,9 @@ public sealed class MonthInvestment
     /// </summary>
     public Months Month { get; private set; }
 
-    private void update(double investmentAmount, string typeOfInvestment,
+    private void update(double investmentAmount,
                            double investmentPercentage, int monthsId)
     {
-        validateDomain(investmentAmount, typeOfInvestment, investmentPercentage, monthsId);
+        validateDomain(investmentAmount, investmentPercentage, monthsId);
     }
 }

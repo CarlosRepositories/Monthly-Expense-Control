@@ -28,7 +28,7 @@ public class LastYearInvestmentDataAccessService : ILastYearInvestmentService
         return Mapper.Map<IEnumerable<LastYearInvestmentDTO>>(investments);
     }
 
-    public async Task<LastYearInvestmentDTO> GetLastYearInvestmentByIdAsync(int id)
+    public async Task<LastYearInvestmentDTO> GetLastYearInvestmentdAsync()
     {
         var investment = await Repository.GetLastYearInvestmentAsync();
         return Mapper.Map<LastYearInvestmentDTO>(investment);
@@ -44,5 +44,10 @@ public class LastYearInvestmentDataAccessService : ILastYearInvestmentService
     {
         var investment = Mapper.Map<LastYearInvestment>(investmentDto);
         await Repository.UpdateLastYearInvestmentAsync(investment);
+    }
+
+    Task<LastYearInvestmentDTO> ILastYearInvestmentService.GetLastYearInvestmentAsync()
+    {
+        throw new NotImplementedException();
     }
 }

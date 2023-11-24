@@ -19,14 +19,19 @@ public class MonthInvestmentDTO
     public double InvestmentAmount { get; set; }
 
     /// <summary>
-    /// Type of investment.
-    /// </summary>
-    public string TypeOfInvestment { get; set; }
-
-    /// <summary>
     /// The percentage invested related to the salary amount for example 0.10.
     /// </summary>
     public double InvestmentPercentage { get; set; }
+
+    /// <summary>
+    /// Represents a data transfer object Last year investment 
+    /// </summary>
+    public LastYearInvestmentDTO LastYearInvestment { get; set; }
+
+    /// <summary>
+    /// Withdrawal summary per month
+    /// </summary>
+    public WithdrawalSummaryDTO WithdrawalSummary { get; set; }
 
     /// <summary>
     /// Number that represent the month        
