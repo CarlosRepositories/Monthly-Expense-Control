@@ -5,7 +5,7 @@ using MonthyExpenseControl.Domain.Interfaces;
 
 namespace MonthyExpenseControl.Application.Services
 {
-    public class InvestmentStatementService
+    public class InvestmentStatementService : IInvestmentStatementService
     {
         private readonly ISummaryService SummaryService;
         private readonly ILastYearInvestmentRepository LastYearInvestmentRepository;
