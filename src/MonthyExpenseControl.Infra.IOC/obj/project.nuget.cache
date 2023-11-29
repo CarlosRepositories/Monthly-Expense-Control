@@ -1,14 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "24HW46pgIbCuhMfDbM8sBu85EtXCTsFc8IF1hOY9+BrcRKgOryv9DTz8Er3R3oxn40RpLWcob1w06OM0ufrFTQ==",
+  "dgSpecHash": "Q2Qwxe9gVyTeQ7vd1wba0Q6CihTQs+wp9WndbyqNQ40zIyThh7IWKLkxLZKne52+EvFqtRUlPQIukMxuG9Abbg==",
   "success": true,
   "projectFilePath": "C:\\Users\\carrl\\OneDrive\\Área de Trabalho\\estudos\\ControleDeGastosMensais\\Controle-de-Gastos-Mensais-MVC\\src\\MonthyExpenseControl.Infra.IOC\\MonthyExpenseControl.Infra.IOC.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\carrl\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\carrl\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\carrl\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",

@@ -123,10 +123,6 @@ namespace MonthyExpenseControl.Infra.Data.Migrations
                     b.Property<int>("MonthsId")
                         .HasColumnType("int");
 
-                    b.Property<string>("TypeOfInvestment")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("MonthInvestmentId");
 
                     b.HasIndex("MonthsId");

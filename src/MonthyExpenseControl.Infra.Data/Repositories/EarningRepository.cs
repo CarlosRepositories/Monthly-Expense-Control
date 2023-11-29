@@ -31,7 +31,7 @@ namespace MonthyExpenseControl.Infra.Data.Repositories
             return await Context.Earnings.ToListAsync();
         }
 
-        public async Task<Earning> RemoveEarningsAsync(Earning earning)
+        public async Task<Earning> RemoveEarningAsync(Earning earning)
         {
 
             Context.Earnings.Remove(earning);

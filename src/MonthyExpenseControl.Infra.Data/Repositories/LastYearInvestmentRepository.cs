@@ -28,7 +28,7 @@ namespace MonthyExpenseControl.Infra.Data.Repositories
 
         public async Task<LastYearInvestment> GetLastYearInvestmentAsync()
         {
-            return await Context.LastYearInvestment.FirstAsync();
+            return await Context.LastYearInvestment.LastAsync();
         }
 
         public async Task<LastYearInvestment> RemoveExpensesAsync(LastYearInvestment lastYearInvestment)

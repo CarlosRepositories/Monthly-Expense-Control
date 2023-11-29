@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "kB6DWKg8iOp97q9SY6gxzN+JvGZZUWnFzgfbsoj8+w1HS6AfJ4DGyVdb2mTaRokWKKjtY4pZvXI/hwOG+WHUtA==",
+  "dgSpecHash": "DvzoG5f9dccwaLVOAEq2/WLwFQpPYw1QmvmtvkypMNViUJ+GQOA9wO1pz/TfEUOmK1Ea6vcm5m6oRv0iXEj8Bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\carrl\\OneDrive\\Área de Trabalho\\estudos\\ControleDeGastosMensais\\Controle-de-Gastos-Mensais-MVC\\src\\MonthyExpenseControl.Application\\MonthyExpenseControl.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\carrl\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\carrl\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }

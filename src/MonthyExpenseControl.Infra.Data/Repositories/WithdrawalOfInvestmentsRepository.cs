@@ -2,6 +2,7 @@
 using MonthyExpenseControl.Domain.Entities;
 using MonthyExpenseControl.Domain.Interfaces;
 using MonthyExpenseControl.Infra.Data.Context;
+using System.Runtime.CompilerServices;
 
 namespace MonthyExpenseControl.Infra.Data.Repositories
 {
@@ -13,36 +14,36 @@ namespace MonthyExpenseControl.Infra.Data.Repositories
         {
             Context = context;
         }
-        public async Task<WithdrawalOfInvestments> CreateEarningAsync(WithdrawalOfInvestments withdrawal)
-        {
-            Context.WithdrawalOfInvestments.Add(withdrawal);
-            await Context.SaveChangesAsync();
-            return withdrawal;
-        }
 
-        public async Task<WithdrawalOfInvestments> GetEarningByIdAsync(int id)
-        {
-            return await Context.WithdrawalOfInvestments.FindAsync(id);
-
-        }
-
-        public async Task<IEnumerable<WithdrawalOfInvestments>> GetEarningsAsync()
-        {
-            return await Context.WithdrawalOfInvestments.ToListAsync();
-        }
-
-        public async Task<WithdrawalOfInvestments> RemoveEarningsAsync(WithdrawalOfInvestments withdrawal)
+        public async Task<WithdrawalOfInvestments> RemoveWithDrawalAsync(WithdrawalOfInvestments withdrawal)
         {
             Context.WithdrawalOfInvestments.Remove(withdrawal);
             await Context.SaveChangesAsync();
             return withdrawal;
         }
 
-        public async Task<WithdrawalOfInvestments> UpdateEarningAsync(WithdrawalOfInvestments withdrawal)
+        public async Task<WithdrawalOfInvestments> GetWithDrawalByIdAsync(int id)
+        {
+            return await Context.WithdrawalOfInvestments.FindAsync(id);
+        }
+
+        public async Task<IEnumerable<WithdrawalOfInvestments>> GetWithDrawalsAsync()
+        {
+            return await Context.WithdrawalOfInvestments.ToListAsync();
+        }
+
+        public async Task<WithdrawalOfInvestments> CreateWithDrawalAsync(WithdrawalOfInvestments withdrawal)
+        {
+            Context.WithdrawalOfInvestments.Add(withdrawal);
+            await Context.SaveChangesAsync();
+            return withdrawal;
+        }
+
+        public async Task<WithdrawalOfInvestments> UpdateWithDrawalAsync(WithdrawalOfInvestments withdrawal)
         {
             Context.WithdrawalOfInvestments.Update(withdrawal);
             await Context.SaveChangesAsync();
             return withdrawal;
-        }
+        }        
     }
 }
