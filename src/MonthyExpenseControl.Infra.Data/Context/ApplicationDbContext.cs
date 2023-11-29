@@ -1,5 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using MonthyExpenseControl.Domain.Entities;
+using MonthyExpenseControl.Infra.Data.Identity;
 
 namespace MonthyExpenseControl.Infra.Data.Context;
 
@@ -7,7 +9,7 @@ namespace MonthyExpenseControl.Infra.Data.Context;
 /// Represents the context responsible for
 /// creating database entities and some configurations
 /// </summary>
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : IdentityDbContext<AplicationUser>
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {

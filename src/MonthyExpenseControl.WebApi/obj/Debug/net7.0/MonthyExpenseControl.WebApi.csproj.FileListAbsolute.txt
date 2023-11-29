@@ -84,3 +84,12 @@ C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Contro
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\obj\Debug\net7.0\MonthyExpenseControl.WebApi.pdb
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\obj\Debug\net7.0\MonthyExpenseControl.WebApi.genruntimeconfig.cache
 C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\obj\Debug\net7.0\ref\MonthyExpenseControl.WebApi.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.Extensions.FileProviders.Embedded.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\carrl\OneDrive\Área de Trabalho\estudos\ControleDeGastosMensais\Controle-de-Gastos-Mensais-MVC\src\MonthyExpenseControl.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Options.dll
