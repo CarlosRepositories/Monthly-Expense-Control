@@ -9,7 +9,7 @@ namespace MonthyExpenseControl.Infra.Data.Context;
 /// Represents the context responsible for
 /// creating database entities and some configurations
 /// </summary>
-public class ApplicationDbContext : IdentityDbContext<AplicationUser>
+public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
 {
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
     {

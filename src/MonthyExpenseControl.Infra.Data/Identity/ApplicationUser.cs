@@ -2,7 +2,7 @@
 
 namespace MonthyExpenseControl.Infra.Data.Identity
 {
-    public class AplicationUser : IdentityUser
+    public class ApplicationUser : IdentityUser
     {
     }
 }
