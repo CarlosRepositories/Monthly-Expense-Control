@@ -1,11 +1,14 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MonthyExpenseControl.Application.Interfaces;
 using MonthyExpenseControl.Application.Mappings;
 using MonthyExpenseControl.Application.Services;
+using MonthyExpenseControl.Domain.Account;
 using MonthyExpenseControl.Domain.Interfaces;
 using MonthyExpenseControl.Infra.Data.Context;
+using MonthyExpenseControl.Infra.Data.Identity;
 using MonthyExpenseControl.Infra.Data.Repositories;
 
 namespace MonthyExpenseControl.Infra.IOC
@@ -20,6 +23,10 @@ namespace MonthyExpenseControl.Infra.IOC
                     b => b.MigrationsAssembly(typeof(ApplicationDbContext)
                     .Assembly.FullName)));
 
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
             services.AddScoped<IEarningRepository, EarningRepository>();
             services.AddScoped<IExpenseRepository, ExpenseRepository>();
             services.AddScoped<ILastYearInvestmentRepository, LastYearInvestmentRepository>();
@@ -32,9 +39,10 @@ namespace MonthyExpenseControl.Infra.IOC
             services.AddScoped<ISummaryService, SummaryService>();
             services.AddScoped<IWithdrawalOfInvestmentsService, WithdrawalOfInvestmentsDataAccessService>();
             services.AddAutoMapper(typeof(DomainToDTOMappingProfiler));
+            services.AddScoped<IAuthenticate, AuthenticateService>();
+            services.AddScoped<ISeedUserRoleInitial, SeedRoleInitial>();
 
             return services;
         }
-
     }
 }
