@@ -17,8 +17,4 @@
     <ProjectReference Include="..\MonthyExpenseControl.Infra.IOC\MonthyExpenseControl.Infra.IOC.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
 </Project>

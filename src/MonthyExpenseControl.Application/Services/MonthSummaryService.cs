@@ -1,4 +1,5 @@
-﻿using MonthyExpenseControl.Application.DTOs;
+﻿using AutoMapper;
+using MonthyExpenseControl.Application.DTOs;
 using MonthyExpenseControl.Application.Interfaces;
 
 namespace MonthyExpenseControl.Application.Services;
@@ -31,5 +32,22 @@ public class MonthSummaryService : IMonthSummaryService
             MonthlyExpenses = monthlyExpenses,
             SumaryOfTheMonth = summary,
         };
+    }
+
+    public async Task<MonthSummaryDTO> UpdateMonthSummary(MonthSummaryDTO monthSummaryDTO)
+    {
+        foreach(EarningDTO earningDTO in monthSummaryDTO.MonthlyEarnings)
+        {
+            await EarningService.UpdateEarningAsync(earningDTO);            
+        }
+
+        foreach(ExpenseDTO expenseDTO in monthSummaryDTO.MonthlyExpenses)
+        {
+            await ExpenseService.UpdateExpenseAsync(expenseDTO);
+        }
+
+        var monthSumaryDto = GetMonthSummary(monthSummaryDTO.MonthsId);
+
+        return monthSumaryDto;
     }
 }
